@@ -1,13 +1,21 @@
-public class musica {
+public class Musica {
     private int id;
     private String Nome;
     private int duracao;
+    private Artista artista;
 
-
-    public musica() {
+    public Musica() {
     }
 
-    public musica(int id, String Nome, int duracao) {
+    public Artista getArtista() {
+        return this.artista;
+    }
+
+    public void setArtista(Artista artista) {
+        this.artista = artista;
+    }
+
+    public Musica(int id, String Nome, int duracao) {
         this.id = id;
         this.Nome = Nome;
         this.duracao = duracao;
@@ -35,6 +43,18 @@ public class musica {
 
     public void setDuracao(int duracao) {
         this.duracao = duracao;
+    }
+
+
+
+    @Override
+    public String toString() {
+        return "{" +
+            " id='" + getId() + "'" +
+            ", Nome='" + getNome() + "'" +
+            ", duracao='" + getDuracao() + "'" +
+            ", artista='" + getArtista().getNome() + "'" +
+            "}";
     }
 
 }

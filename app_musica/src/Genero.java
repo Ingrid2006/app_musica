@@ -1,5 +1,14 @@
 public class Genero{
-    String nome;
+    private String nome;
+
+    public Genero() {
+    }
+
+    public Genero(String nome) {
+        this.nome = nome;
+    }
+
+
 
     public String getNome() {
         return this.nome;
@@ -8,5 +17,6 @@ public class Genero{
     public void setNome(String nome) {
         this.nome = nome;
     }
+    
 
 }
