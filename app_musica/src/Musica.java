@@ -1,10 +1,10 @@
-public class musica {
+public class Musica {
     private int id;
     private String Nome;
     private int duracao;
     private Artista artista;
 
-    public musica() {
+    public Musica() {
     }
 
     public Artista getArtista() {
@@ -15,7 +15,7 @@ public class musica {
         this.artista = artista;
     }
 
-    public musica(int id, String Nome, int duracao) {
+    public Musica(int id, String Nome, int duracao) {
         this.id = id;
         this.Nome = Nome;
         this.duracao = duracao;

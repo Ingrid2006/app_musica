@@ -1,8 +1,7 @@
 public class Playlist {
     private String nome;
     private int tempo;
-    private Album album;
-    private musica musicas;
+    private Musica musicas;
     private Usuario usuario;
 
     public Playlist() {
@@ -24,19 +23,11 @@ public class Playlist {
         this.tempo = tempo;
     }
 
-    public Album getAlbum() {
-        return this.album;
-    }
-
-    public void setAlbum(Album album) {
-        this.album = album;
-    }
-
-    public musica getMusicas() {
+    public Musica getMusicas() {
         return this.musicas;
     }
 
-    public void setMusicas(musica musicas) {
+    public void setMusicas(Musica musicas) {
         this.musicas = musicas;
     }
 

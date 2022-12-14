@@ -3,7 +3,7 @@ public class Album {
     private String nome;
     private int duracao;
     private Artista artista;
-    private  musica musicas;
+    private  Musica musicas;
     private Genero genero;
 
 
@@ -43,11 +43,11 @@ public class Album {
         this.artista = artista;
     }
 
-    public musica getMusicas() {
+    public Musica getMusicas() {
         return this.musicas;
     }
 
-    public void setMusicas(musica musicas) {
+    public void setMusicas(Musica musicas) {
         this.musicas = musicas;
     }
 
