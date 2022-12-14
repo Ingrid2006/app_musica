@@ -2,16 +2,14 @@ public class Album {
     private int id;
     private String nome;
     private int duracao;
+    private Artista artista;
+    private  musica musicas;
+    private Genero genero;
 
 
     public Album() {
     }
 
-    public Album(int id, String nome, int duracao) {
-        this.id = id;
-        this.nome = nome;
-        this.duracao = duracao;
-    }
 
     public int getId() {
         return this.id;
@@ -35,6 +33,30 @@ public class Album {
 
     public void setDuracao(int duracao) {
         this.duracao = duracao;
+    }
+
+    public Artista getArtista() {
+        return this.artista;
+    }
+
+    public void setArtista(Artista artista) {
+        this.artista = artista;
+    }
+
+    public musica getMusicas() {
+        return this.musicas;
+    }
+
+    public void setMusicas(musica musicas) {
+        this.musicas = musicas;
+    }
+
+    public Genero getGenero() {
+        return this.genero;
+    }
+
+    public void setGenero(Genero genero) {
+        this.genero = genero;
     }
 
 
