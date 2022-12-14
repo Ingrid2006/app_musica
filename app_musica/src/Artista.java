@@ -1,3 +1,4 @@
-public class Artista extends Pessoa{
+public class Artista extends Pessoa{ 
+    
      
 }
