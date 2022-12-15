@@ -37,7 +37,7 @@ public class App {
 
         // Creates a new File instance by converting the given pathname string
         // into an abstract pathname
-        File f = new File("/home/qwerty-note/Documents/tps/app_musica2/app_musica/tocalizando/musicas/");
+        File f = new File("/home/qwerty-note/Documents/tps/app_musica2/app_musica/tocalizando/musicas");
 
         // Populates the array with names of files and directories
         pathnames = f.list();
@@ -52,14 +52,13 @@ public class App {
 
         while (escolha  != 6){
         System.out.print("\n Escolha Qual musica toca: ");
-        System.out.print("\n Escolha Qual musica toca: ");
         escolha= sc.nextInt();
 
         
 
         if (escolha == 1){
             try {
-                FileInputStream fileInputStream = new FileInputStream("musicas/1-perl-jam-alive.mp3");
+                FileInputStream fileInputStream = new FileInputStream("/home/qwerty-note/Documents/tps/app_musica2/app_musica/tocalizando/musicas/1-perl-jam-alive.mp3");
                 Player player = new Player(fileInputStream);
                 System.out.println("Tocando...");
                 player.play();
@@ -75,7 +74,7 @@ public class App {
 
         else if (escolha == 2){
             try {
-                FileInputStream fileInputStream = new FileInputStream("musicas/2-perl-jam-Even Flow.mp3");
+                FileInputStream fileInputStream = new FileInputStream("/home/qwerty-note/Documents/tps/app_musica2/app_musica/tocalizando/musicas/2-perl-jam-Even Flow.mp3");
                 Player player = new Player(fileInputStream);
                 System.out.println("Tocando...");
                 player.play();
@@ -90,7 +89,7 @@ public class App {
         
         else if (escolha == 3){
             try {
-                FileInputStream fileInputStream = new FileInputStream("musicas/3-perl-jam-jeremy.mp3");
+                FileInputStream fileInputStream = new FileInputStream("/home/qwerty-note/Documents/tps/app_musica2/app_musica/tocalizando/musicas/3-perl-jam-jeremy.mp3");
                 Player player = new Player(fileInputStream);
                 System.out.println("Tocando...");
                 player.play();
@@ -105,7 +104,7 @@ public class App {
 
         else if (escolha == 4){
             try {
-                FileInputStream fileInputStream = new FileInputStream("musicas/4-perl-jam-black.mp3");
+                FileInputStream fileInputStream = new FileInputStream("/home/qwerty-note/Documents/tps/app_musica2/app_musica/tocalizando/musicas/4-perl-jam-black.mp3");
                 Player player = new Player(fileInputStream);
                 System.out.println("Tocando...");
                 player.play();
