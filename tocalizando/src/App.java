@@ -52,6 +52,7 @@ public class App {
 
         while (escolha  != 6){
         System.out.print("\n Escolha Qual musica toca: ");
+        System.out.print("\n Escolha Qual musica toca: ");
         escolha= sc.nextInt();
 
         
@@ -118,21 +119,9 @@ public class App {
             
         } 
         else if (escolha == 5){
-            System.out.println("qual genero gostaria de ouvir:");
-            while (escolha  != 3){
-                System.out.print("\n 1 - Blues \n 2- pop  \n 3 - nenhum");
-                escolha= sc.nextInt(); 
-                
-        if (escolha == 1){ 
-
-        } 
-        else if (escolha == 2){
-        }
-        else if (escolha == 3){
-        }
-        
-           
-        }
+            System.out.println("Saindo...:");
+            break;
+            
     
 
 
