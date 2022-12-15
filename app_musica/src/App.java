@@ -22,6 +22,7 @@ public class App {
         System.out.print("\n Informe sua idade:");
         usu.setIdade(sc.nextInt());
 
+<<<<<<< HEAD
         while (escolha  != 6){
         System.out.print("\n Digite: \n 1 - escutar musica \n 2- criar playlist  \n 3 - Escutar um album    \n 4 - Assinar plano artistista\n 5 - ouvir playlist de generos \n 6 - Sair ");
         escolha= sc.nextInt();
@@ -31,6 +32,10 @@ public class App {
 
         else if (escolha == 2){
         }
+=======
+        // teste de commit
+
+>>>>>>> f1c1269396698c6c51365e442a188ee28acdac7a
         
         else if (escolha == 3){
         }
