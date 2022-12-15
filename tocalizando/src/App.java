@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
@@ -30,15 +31,36 @@ public class App {
         System.out.print("\n Informe sua idade:");
         usu.setIdade(sc.nextInt());
 
+        System.out.println(" ---- Musicas Disponiveis ----");
+
+        String[] pathnames;
+
+        // Creates a new File instance by converting the given pathname string
+        // into an abstract pathname
+        File f = new File("/home/qwerty-note/Documents/tps/app_musica2/app_musica/tocalizando/musicas/");
+
+        // Populates the array with names of files and directories
+        pathnames = f.list();
+
+        // For each pathname in the pathnames array
+        System.out.println("****************************");
+        for (String pathname : pathnames) {
+            // Print the names of files and directories
+            System.out.println(pathname);
+        }
+        System.out.println("****************************");
+
         while (escolha  != 6){
-        System.out.print("\n Digite: \n 1 - escutar musica \n 2- criar playlist  \n 3 - Escutar um album    \n 4 - Assinar plano artistista\n 5 - ouvir playlist de generos \n 6 - Sair ");
+        System.out.print("\n Escolha Qual musica toca: ");
         escolha= sc.nextInt();
+
+        
 
         if (escolha == 1){
             try {
-                FileInputStream fileInputStream = new FileInputStream("perl-jam-alive.mp3");
+                FileInputStream fileInputStream = new FileInputStream("musicas/1-perl-jam-alive.mp3");
                 Player player = new Player(fileInputStream);
-                System.out.println("Song is playing...");
+                System.out.println("Tocando...");
                 player.play();
             } catch (FileNotFoundException e) {
                 // TODO Auto-generated catch block
@@ -51,14 +73,48 @@ public class App {
         }
 
         else if (escolha == 2){
+            try {
+                FileInputStream fileInputStream = new FileInputStream("musicas/2-perl-jam-Even Flow.mp3");
+                Player player = new Player(fileInputStream);
+                System.out.println("Tocando...");
+                player.play();
+            } catch (FileNotFoundException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            } catch (JavaLayerException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
         }
         
         else if (escolha == 3){
+            try {
+                FileInputStream fileInputStream = new FileInputStream("musicas/3-perl-jam-jeremy.mp3");
+                Player player = new Player(fileInputStream);
+                System.out.println("Tocando...");
+                player.play();
+            } catch (FileNotFoundException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            } catch (JavaLayerException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
         }
 
         else if (escolha == 4){
-            System.out.println("Informe sua gravadora:");
-            art.setGravadora(sc.nextLine());
+            try {
+                FileInputStream fileInputStream = new FileInputStream("musicas/4-perl-jam-black.mp3");
+                Player player = new Player(fileInputStream);
+                System.out.println("Tocando...");
+                player.play();
+            } catch (FileNotFoundException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            } catch (JavaLayerException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
             
         } 
         else if (escolha == 5){
