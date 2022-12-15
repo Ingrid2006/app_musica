@@ -1,30 +1,24 @@
-public class Artista {
-     private String nome;
-     private int idade;
-     private String nacionalidade;
+public class Artista extends Pessoa{ 
 
-    public String getNome() {
-        return this.nome;
+    private String gravadora;
+     private  Album album;
+     
+
+    public String getGravadora() {
+        return this.gravadora;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-
+    public void setGravadora(String gravadora) {
+        this.gravadora = gravadora;
     }
 
-    public int getIdade() {
-        return this.idade;
+    public Album getAlbum() {
+        return this.album;
     }
 
-    public void setIdade(int idade) {
-        this.idade = idade;
+    public void setAlbum(Album album) {
+        this.album = album;
     }
 
-    public String getNacionalidade() {
-        return this.nacionalidade;
-    }
 
-    public void setNacionalidade(String nacionalidade) {
-        this.nacionalidade = nacionalidade;
-    }
 }

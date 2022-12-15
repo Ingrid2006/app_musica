@@ -1,23 +1,11 @@
-public class Usuario {
-    
-}
-Public class Usuario{
-    String nome;
-    Int idade;
+public class Usuario extends Pessoa{
+    private Musica musicas;
 
-    public String getNome() {
-        return this.nome;
+    public Musica getMusicas() {
+        return this.musicas;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public int getTempo() {
-        return this.tempo;
-    }
-
-    public void setTempo(int tempo) {
-        this.tempo = tempo;
+    public void setMusicas(Musica musicas) {
+        this.musicas = musicas;
     }
 }
